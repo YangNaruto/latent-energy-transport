@@ -9,7 +9,7 @@
 
 ### Stage 1: Pretrain VQ-VAE-2
 
-Specify `DATASET_NAME` and run the following command, which will excute `train_vqvae.py`.
+Specify `DATASET_NAME` and run the following command, which will excutes `train_vqvae.py`.
 ```
 sh run_ae.sh DATASET_NAME
 ```
@@ -20,12 +20,12 @@ We also provide useful customized commands and detailed usage can be found in  `
 * `--n_gpu` number of gpus for parallel training
 * `--input_noise` add noise to input image and train vqvae as a denoised ae.(default: 0.0)
 
-Below is the reconsturction result:
+Below is the reconstruction result:
 <p align="left"><img width="95%" src="assets/afhq-reconstruction.png" /></p>
 
 ### Stage 2: Train EBM
 
-Specify `DATASET_NAME`, `SRC`, and `TGT`, and run the following command, which will excute `adapt.py`.
+Specify `DATASET_NAME`, `SRC`, and `TGT`, and run the following command, which will excutes `adapt.py`.
 ```
 sh run_ebm.py DATASET_NAME SRC TGT
 ```

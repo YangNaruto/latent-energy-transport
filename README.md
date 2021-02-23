@@ -35,6 +35,8 @@ Once done, the dataset structure follows:
 
 Currently, we provide the implementation based on VQ-VAE-2. Please stay tuned for BetaVAE and ALAE.
 
+We show a translation sequence with ALAE:
+<p align="center"><img width="95%" src="assets/celeba-hq-sequence.jpg" /></p>
 ## Citation 
 If you find this work useful for your research, please cite our related papers:
 ```
