@@ -37,7 +37,9 @@ Currently, we provide the implementation based on VQ-VAE-2. Please stay tuned fo
 
 We show a translation sequence with ALAE:
 <p align="center"><img width="95%" src="assets/celeba-hq-sequence.jpg" /></p>
+
 ## Citation 
+
 If you find this work useful for your research, please cite our related papers:
 ```
 @article{zhao2020unpaired,
@@ -57,4 +59,5 @@ If you find this work useful for your research, please cite our related papers:
 ```
 
 ## Acknowledgements
+
 Our code is inspired by [BetaVAE](https://github.com/1Konny/Beta-VAE), [VQ-VAE-2](https://github.com/rosinality/vq-vae-2-pytorch) and [ALAE](https://github.com/podgorskiy/ALAE).

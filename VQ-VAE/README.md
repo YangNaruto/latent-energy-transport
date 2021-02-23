@@ -9,7 +9,7 @@
 
 ### Stage 1: Pretrain VQ-VAE-2
 
-Specify `DATASET_NAME` and run the following command, which will excutes `train_vqvae.py`.
+Specify `DATASET_NAME` and run the following command, which will excute `train_vqvae.py`.
 ```
 sh run_ae.sh DATASET_NAME
 ```
@@ -25,7 +25,7 @@ Below is the reconstruction result:
 
 ### Stage 2: Train EBM
 
-Specify `DATASET_NAME`, `SRC`, and `TGT`, and run the following command, which will excutes `adapt.py`.
+Specify `DATASET_NAME`, `SRC`, and `TGT`, and run the following command, which will excute `adapt.py`.
 ```
 sh run_ebm.py DATASET_NAME SRC TGT
 ```
