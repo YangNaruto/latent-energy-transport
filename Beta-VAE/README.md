@@ -1,5 +1,7 @@
 # Implemention of EBM for I2I based on BetaVAE
 
+<p align="center"><img width="50%" src="beta-vae.png" /></p>
+
 ## Dependencies
 
 ```
