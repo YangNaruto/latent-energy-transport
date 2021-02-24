@@ -16,7 +16,8 @@
 
 * AFHQ and CelebA-HQ: please refer to the repo [StarGAN2](https://github.com/clovaai/stargan-v2/) and put them into the folder `datasets`.
 * apple2orange and photo2vangoth: please refer to the repo [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and and put them into the folder `datasets`. Then, please rearange the data following the format of AFHQ or CelebA-HQ.
-
+* celeba: see [here](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
+  
 Once done, the dataset structure follows:
 ```
 ├── datasets
@@ -29,6 +30,13 @@ Once done, the dataset structure follows:
            ├── cat
            ├── dog
            |── wild
+    └── celeba
+        ├── train
+           ├── male
+           ├── female
+        ├── test
+           ├── male
+           ├── female
 ```
 
 ## Training
