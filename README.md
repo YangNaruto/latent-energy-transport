@@ -41,7 +41,7 @@ Once done, the dataset structure follows:
 
 ## Training
 
-Currently, we provide the implementation based on VQ-VAE-2 and BetaVAE. Please stay tuned for ALAE. (The EBM implementation is almost the same with BetaVAE except for the ALAE backbone.)
+We provide all implementations based on VQ-VAE-2, BetaVAE and ALAE. Please refer to respective folders for more details.
 
 We show a translation sequence with ALAE:
 <p align="center"><img width="95%" src="assets/celeba-hq-sequence.jpg" /></p>
