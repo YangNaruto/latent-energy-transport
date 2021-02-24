@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="150063ea-c98b-4551-8732-c92cfe1e8d0a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Beta-VAE/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Beta-VAE/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Beta-VAE/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Beta-VAE/dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Beta-VAE/download_dsprites.sh" beforeDir="false" />
@@ -54,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614052249370</updated>
       <workItem from="1614052251164" duration="8048000" />
-      <workItem from="1614122368628" duration="797000" />
+      <workItem from="1614122368628" duration="916000" />
     </task>
     <servers />
   </component>
