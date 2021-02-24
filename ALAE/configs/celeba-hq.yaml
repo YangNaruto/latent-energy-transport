@@ -1,0 +1,45 @@
+# Config for training ALAE on CelebA-HQ at resolution 256x256
+
+NAME: celeba_hq
+DATA:
+  ROOT: ../i2i/datasets/
+  NAME: celeba_hq
+  SOURCE: female
+  TARGET: male
+  BATCH: 32
+LANGEVIN:
+  STEP: 15
+  LR: 1.0
+EBM:
+  LR: 0.1
+  OPT: 'sgd'
+  LAYER: 0
+  HIDDEN: 2048
+DATASET:
+  PART_COUNT: 16
+  SIZE: 29000
+  SIZE_TEST: 1000
+  MAX_RESOLUTION_LEVEL: 8
+  SAMPLES_PATH: dataset_samples/faces/realign1024x1024
+  STYLE_MIX_PATH: style_mixing/test_images/set_celeba-hq
+MODEL:
+  LATENT_SPACE_SIZE: 512
+  LAYER_COUNT: 7
+  MAX_CHANNEL_COUNT: 512
+  START_CHANNEL_COUNT: 64
+  DLATENT_AVG_BETA: 0.995
+  MAPPING_LAYERS: 8
+OUTPUT_DIR: training_artifacts/celeba-hq256-old
+TRAIN:
+  BASE_LEARNING_RATE: 0.002
+  EPOCHS_PER_LOD: 30
+  LEARNING_DECAY_RATE: 0.1
+  LEARNING_DECAY_STEPS: []
+  TRAIN_EPOCHS: 280
+  #                    4       8       16       32       64       128        256       512       1024
+  LOD_2_BATCH_8GPU: [512,    256,     128,      64,      32,       32,        32,       32,        24]
+  LOD_2_BATCH_4GPU: [512,    256,     128,      64,      32,       32,        32,       32,        16]
+  LOD_2_BATCH_2GPU: [128,    128,     128,      64,      32,       32,        16]
+  LOD_2_BATCH_1GPU: [128,    128,     128,      64,      32,       16]
+
+  LEARNING_RATES: [0.0015,  0.0015,   0.0015,   0.0015,  0.0015,   0.0015,     0.0015,     0.003,    0.003]

@@ -1,0 +1,41 @@
+# Config for training ALAE on CelebA-HQ at resolution 256x256
+
+NAME: afhq
+DATASET:
+  ROOT: data/datasets
+  MAX_RESOLUTION_LEVEL: 8
+DATA:
+  ROOT: ./datasets/
+  NAME: afhq
+  SOURCE: dog
+  TARGET: cat
+  BATCH: 32
+LANGEVIN:
+  STEP: 20
+  LR: 1.0
+EBM:
+  LR: 0.1
+  OPT: 'sgd'
+  LAYER: 0
+  HIDDEN: 2048
+MODEL:
+  LATENT_SPACE_SIZE: 512
+  LAYER_COUNT: 7
+  MAX_CHANNEL_COUNT: 512
+  START_CHANNEL_COUNT: 64
+  DLATENT_AVG_BETA: 0.995
+  MAPPING_LAYERS: 8
+OUTPUT_DIR: training_artifacts/afhq
+TRAIN:
+  BASE_LEARNING_RATE: 0.002
+  EPOCHS_PER_LOD: 35
+  LEARNING_DECAY_RATE: 0.1
+  LEARNING_DECAY_STEPS: []
+  TRAIN_EPOCHS: 500
+  #                    4       8       16       32       64       128        256       512       1024
+  LOD_2_BATCH_8GPU: [512,    256,     128,      64,      32,       32,        32,       32,        24]
+  LOD_2_BATCH_4GPU: [256,    128,     64,       32,      16,       16,        16,       16,        8]
+  LOD_2_BATCH_2GPU: [128,    128,     128,      64,      32,       32,        16]
+  LOD_2_BATCH_1GPU: [64,     64,      64,       32,      16,       8,         4]
+
+  LEARNING_RATES: [0.0015,  0.0015,   0.0015,   0.0015,  0.0015,   0.0015,     0.0015,     0.003,    0.003]
