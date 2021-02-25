@@ -138,7 +138,14 @@ In `OUTPUT_DIR` it saves a file `last_checkpoint` which contains path to the act
 * `EBM.LAYER`: EBM hidden layers
 * `EBM.HIDDEN`: EBM hidden dimension
 
+The usage of configuration files is:
+
+    AFHQ: afhq.yaml
+    CelebA-HQ 1024x1024: celeba-hq1024.yaml
+    CelebA-HQ 256x256: celeba-hq.yaml
 Results will be stored in the directory `./results/{DATASET_NAME}/{DATA.SOURCE}2{DATA.TARGET}`.
+
+
 ## Citation
 
     @InProceedings{pidhorskyi2020adversarial,
