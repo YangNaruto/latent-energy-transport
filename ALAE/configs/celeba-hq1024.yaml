@@ -2,7 +2,7 @@
 
 NAME: celeba_hq1024
 DATA:
-  ROOT: ../i2i/datasets/
+  ROOT: ./datasets/
   NAME: celeba_hq1024
   SOURCE: female
   TARGET: male

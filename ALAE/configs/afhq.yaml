@@ -2,7 +2,7 @@
 
 NAME: afhq
 DATASET:
-  ROOT: data/datasets
+  ROOT: ./data/datasets
   MAX_RESOLUTION_LEVEL: 8
 DATA:
   ROOT: ./datasets/

@@ -88,7 +88,7 @@ You can get the pre-generated dataset from: https://drive.google.com/drive/folde
 
 #### Pre-trained models
 
-To download pre-trained models run:
+To download pre-trained models from original ALAE run:
 
     python training_artifacts/download_all.py
 
@@ -133,6 +133,17 @@ In `OUTPUT_DIR` it saves a file `last_checkpoint` which contains path to the act
 
     sh run_i2i.sh
 
+* `-c`: configuration file loaded from directory `configs`.
+* `OUTPUT_DIR`: the directory containing the pretrained checkpoint
+* `DATA.SOURCE`: translation source
+* `DATA.TARGET`: translation target
+* `LANGEVIN.STEP`: Langevin steps
+* `LANGEVIN.LR`: Langevin step size
+* `EBM.LR`: EBM learning rate
+* `EBM.LAYER`: EBM hidden layers
+* `EBM.HIDDEN`: EBM hidden dimension
+
+Results will be stored in the directory `./results/{DATASET_NAME}/{DATA.SOURCE}2{DATA.TARGET}`.
 ## Citation
 
     @InProceedings{pidhorskyi2020adversarial,
