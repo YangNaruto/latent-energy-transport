@@ -21,12 +21,7 @@ For example, let's say we've cloned repository to *~/ALAE* directory, then do:
 
 ![pythonpath](https://podgorskiy.com/static/pythonpath.svg)
 
-Now you can run scripts as follows:
-
-    $ python style_mixing/stylemix.py
-
 #### Repository structure
-
 
 | Path | Description
 | :--- | :----------
