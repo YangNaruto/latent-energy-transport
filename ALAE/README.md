@@ -21,7 +21,7 @@ For example, let's say we've cloned repository to *~/ALAE* directory, then do:
 
 ![pythonpath](https://podgorskiy.com/static/pythonpath.svg)
 
-#### Repository structure
+<!-- #### Repository structure
 
 | Path | Description
 | :--- | :----------
@@ -65,7 +65,7 @@ For example, let's say we've cloned repository to *~/ALAE* directory, then do:
 | &boxvr;&nbsp; registry.py | Registry of network blocks for selecting from config file.
 | &boxvr;&nbsp; scheduler.py | Custom schedulers with warm start and aggregating several optimizers.
 | &boxvr;&nbsp; tracker.py | Module for plotting losses.
-| &boxur;&nbsp; utils.py | Decorator for async call, decorator for caching, registry for network blocks.
+| &boxur;&nbsp; utils.py | Decorator for async call, decorator for caching, registry for network blocks. -->
 
 #### Datasets
 
@@ -154,10 +154,10 @@ Results will be stored in the directory `./results/{DATASET_NAME}/{DATA.SOURCE}2
      title    = {Adversarial Latent Autoencoders},
      year     = {2020},
     }
-    
+
     @article{zhao2020unpaired,
     title={Unpaired Image-to-Image Translation via Latent Energy Transport},
     author={Zhao, Yang and Chen, Changyou},
     journal={arXiv preprint arXiv:2012.00649},
     year={2020}
-}
+    }
