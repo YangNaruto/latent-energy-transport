@@ -1,4 +1,4 @@
-# Unpaired Image-to-Image Translation via Latent Energy Transport
+# Unpaired Image-to-Image Translation via Latent Energy Transport - To Appear in CVPR 2021
 
 <p align="left"><img width="95%" src="assets/intro-figure.png" /></p>
 
