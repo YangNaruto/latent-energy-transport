@@ -124,6 +124,8 @@ In config files, `OUTPUT_DIR` points to where weights are saved to and read from
 
 In `OUTPUT_DIR` it saves a file `last_checkpoint` which contains path to the actual `.pth` pickle with model weight. If you want to test the model with a specific weight file, you can simply modify `last_checkpoint` file.
 
+For CelebA-HQ $256^2$ and $1024^2$, we reuse the checkpoint from ALAE. For AFHQ, we train from scratch.
+
 ## Stage 2: Train EBM
 
     sh run_i2i.sh
