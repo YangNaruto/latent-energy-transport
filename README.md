@@ -41,7 +41,9 @@ Once done, the dataset structure follows:
 
 ## Training
 
-We currently provide implementations based on BetaVAE and ALAE. Please refer to respective folders for more details and stay tuned for the code on VQ-VAE-2.
+We suggest starting with the `synthetic` experiment to get familiar with EBM learning. Then you can directly apply it to other interesting scenarios.
+
+We currently provide implementations based on `Beta-VAE` and `ALAE`. Please refer to respective folders for more details and stay tuned for the code on VQ-VAE-2.
 
 We show a translation sequence with ALAE:
 <p align="center"><img width="95%" src="assets/celeba-hq-sequence.jpg" /></p>
